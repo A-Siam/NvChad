@@ -28,6 +28,8 @@ opt.numberwidth = options.numberwidth
 opt.relativenumber = options.relativenumber
 opt.ruler = options.ruler
 
+-- No show mode
+opt.showmode = false
 -- disable nvim intro
 opt.shortmess:append "sI"
 

@@ -16,6 +16,14 @@ return packer.startup(function()
       "Nvchad/extensions",
    }
 
+   use "prettier/vim-prettier"
+
+   use "wakatime/vim-wakatime"
+
+   use "easymotion/vim-easymotion"
+
+   use "tpope/vim-surround"
+
    use {
       "nvim-lua/plenary.nvim",
    }

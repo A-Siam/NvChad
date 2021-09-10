@@ -8,7 +8,7 @@ M.ui = {
    italic_comments = false,
 
    -- theme to be used, to see all available themes, open the theme switcher by <leader> + th
-   theme = "onedark",
+   theme = "chadracula",
 
    -- theme toggler, toggle between two themes, see theme_toggleer mappings
    theme_toggler = {
@@ -47,7 +47,7 @@ M.options = {
    hidden = true,
    ignorecase = true,
    insert_nav = true, -- navigation in insertmode
-   mapleader = " ",
+   mapleader = "\\",
    mouse = "a",
    number = true,
    -- relative numbers in normal mode tool at the bottom of options.lua
@@ -56,8 +56,8 @@ M.options = {
    shiftwidth = 2,
    smartindent = true,
    tabstop = 8, -- Number of spaces that a <Tab> in the file counts for
-   timeoutlen = 400,
-   relativenumber = false,
+   timeoutlen = 700,
+   relativenumber = true,
    ruler = false,
    updatetime = 250,
    -- used for updater
@@ -84,7 +84,7 @@ M.plugin_status = {
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
    gitsigns = true, -- gitsigns in statusline
-   lspsignature = true, -- lsp enhancements
+   lspsignature = false, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
    telescope_media = false, -- see media files in telescope picker
@@ -174,7 +174,7 @@ M.mappings.plugin = {
    },
    telescope = {
       buffers = "<leader>fb",
-      find_files = "<leader>ff",
+      find_files = "<C-p>",
       git_commits = "<leader>cm",
       git_status = "<leader>gt",
       help_tags = "<leader>fh",
@@ -216,8 +216,7 @@ M.custom.mappings = {
 
 M.plugins = {
    lspconfig = {
-      -- servers = {"html", "cssls"}
-      servers = {},
+      servers = {"html", "cssls", "tsserver"}
    },
 }
 
