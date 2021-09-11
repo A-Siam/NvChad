@@ -16,7 +16,11 @@ return packer.startup(function()
       "Nvchad/extensions",
    }
 
+  use "othree/jsdoc-syntax.vim"
+
    use "prettier/vim-prettier"
+
+   use "heavenshell/vim-jsdoc"
 
    use "wakatime/vim-wakatime"
 
